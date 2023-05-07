@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Fahrenheit a Celsius</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="gradient text-white">
+    <div class="my-5 text-center">
+      <h1 class="fs-1 font-monospace fw-bold">Fahrenheit a Celsius</h1>
+      <p class="fs-4 font-monospace mb-0">
+        Conversión de grados utilizando Tensorflow.js
+      </p>
+    </div>
+
+    <hr class="col-10 mx-auto" />
+
+    <div class="row mt-5">
+      <div class="col-8 mx-auto">
+        <div class="mb-3">
+          <p class="form-label">
+            Grados Fahrenheit:
+            <span class="fw-bold" id="grados">0</span>
+          </p>
+          <div class="input-group">
+            <input
+              id="fahrenheit"
+              type="range"
+              class="form-range"
+              min="-75"
+              max="75"
+            />
+          </div>
+          <div class="form-text text-white-50">
+            Desliza para cambiar el valor de grados Fahrenheit
+          </div>
+        </div>
+        <div class="mb-3">
+          <p class="form-label">Resultado:</p>
+          <div class="form-control text-center fs-5 fw-bold" id="resultado">
+            0 ºF = -17.77 ºC
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
